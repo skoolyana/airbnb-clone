@@ -7,6 +7,7 @@ import CardData from "../components/data/CardData.json";
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
 
 export default function Home({ exploreData, cardData }) {
   exploreData;
@@ -51,15 +52,18 @@ export default function Home({ exploreData, cardData }) {
           </div>
         </section>
 
-        <LargeCard img='https://links.papareact.com/4cj' 
-        title='The Greatest OutDoors'
-        description='WishList Curated By Airbnb.'
-        buttonText='Get Inspired'
-        
-        ></LargeCard>      
-
-
+        <LargeCard
+          img="https://links.papareact.com/4cj"
+          title="The Greatest OutDoors"
+          description="WishList Curated By Airbnb."
+          buttonText="Get Inspired"
+        ></LargeCard>
       </main>
+
+       <Footer/>       
+
+
+
     </div>
   );
 }
